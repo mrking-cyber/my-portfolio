@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef | Web Developer Portfolio</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">Welcome</div>
+        <button class="nav-toggle" aria-label="Toggle navigation menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1 class="hero-title">Hello there, I'm <span class="highlight">Youssef</span>.</h1>
+            <p class="hero-subtitle">A curious <span class="highlight">Front-End Developer</span>, always exploring new ways to craft engaging web experiences, with a little help from my feline friend.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn primary-btn">See My Creations <i class="fas fa-arrow-right"></i></a>
+                <a href="#contact" class="btn secondary-btn">Let's Connect <i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">About My Journey</h2>
+            <p>I'm a dedicated front-end developer passionate about transforming ideas into beautiful, user-centric web applications. My fascination with the web started with a simple HTML page, quickly growing into a love for responsive design, interactive elements, and clean code.</p>
+            <p>I believe in continuous learning and enjoy diving into new frameworks and tools. When I'm not coding, I'm usually found curled up with a good book, enjoying a warm cup of coffee, or perhaps chasing a laser pointer (figuratively, of course!).</p>
+        </div>
+    </section>
+
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <h2 class="section-title">My Toolkit</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill-id="html">
+                    <h3>HTML5</h3>
+                    <p>Semantic structure, accessibility, latest standards.</p>
+                </div>
+                <div class="skill-card" data-skill-id="css">
+                    <h3>CSS3 & SASS</h3>
+                    <p>Responsive layouts (Flexbox, Grid), animations, preprocessors.</p>
+                </div>
+                <div class="skill-card" data-skill-id="js">
+                    <h3>JavaScript (ES6+)</h3>
+                    <p>DOM manipulation, asynchronous operations, modern syntax.</p>
+                </div>
+                <div class="skill-card" data-skill-id="react">
+                    <h3>React</h3>
+                    <p>Component-based architecture, state management, hooks.</p>
+                </div>
+                <div class="skill-card" data-skill-id="git">
+                    <h3>Git & GitHub</h3>
+                    <p>Version control, collaborative workflows.</p>
+                </div>
+                <div class="skill-card" data-skill-id="design">
+                    <h3>UI/UX Principles</h3>
+                    <p>User-centered design, wireframing, prototyping.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="images/car website.png" alt="Responsive Car Anatomy Website" loading="lazy">
+                    <div class="project-card-content">
+                        <h3>Interactive Car Anatomy</h3>
+                        <p>A detailed, responsive article layout showcasing advanced CSS Grid, custom properties, and fluid typography for an engaging user experience.</p>
+                        <div class="project-links">
+                            <a href="https://mrking-cyber.github.io/Responsive-Car-Anatomy-Website/" target="_blank" class="btn primary-btn project-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/mrking-cyber/Responsive-Car-Anatomy-Website" target="_blank" class="btn secondary-btn project-btn">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/elitestore-ecommerce-demo.png" alt="E-commerce Product Page" loading="lazy">
+                    <div class="project-card-content">
+                        <h3>Modern E-commerce Page</h3>
+                        <p>A sleek product page built with React, featuring dynamic content loading, user reviews, and a responsive design.</p>
+                        <div class="project-links">
+                            <a href="https://mrking-cyber.github.io/elitestore-ecommerce-demo/" target="_blank" class="btn primary-btn project-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/mrking-cyber/elitestore-ecommerce-demo" target="_blank" class="btn secondary-btn project-btn">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                 <div class="project-card">
+                    <img src="images/Global connect consulting.png" alt="Landing Page Concept" loading="lazy">
+                    <div class="project-card-content">
+                        <h3>Creative Landing Page</h3>
+                        <p>A vibrant and animated landing page concept designed to capture attention and guide users through a compelling narrative using subtle JavaScript animations.</p>
+                        <div class="project-links">
+                            <a href="https://mrking-cyber.github.io/global-connect-consulting-landing-page/" target="_blank" class="btn primary-btn project-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/mrking-cyber/global-connect-consulting-landing-page/tree/main" target="_blank" class="btn secondary-btn project-btn">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="images/cleopatra-furniture.png" alt="Cleopatra for Furnitures Website" loading="lazy">
+                    <div class="project-card-content">
+                        <h3>Cleopatra for Furnitures</h3>
+                        <p>A modern and chill e-commerce-style website for a furniture brand, focusing on elegant design, smooth user experience, and optimized image loading.</p>
+                        <div class="project-links">
+                            <a href="https://mrking-cyber.github.io/Cleopatra-for-Furnitures/" target="_blank" class="btn primary-btn project-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                            <a href="https://github.com/mrking-cyber/Cleopatra-for-Furnitures" target="_blank" class="btn secondary-btn project-btn">Code <i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <h2 class="section-title">My Journey & Experience</h2>
+            <div class="experience-grid">
+                <div class="experience-card">
+                    <h3>Junior Front-End Developer</h3>
+                    <p class="company">Tech Innovators Inc. | 2023 - Present</p>
+                    <ul>
+                        <li>Developed and maintained responsive user interfaces for client web applications using HTML, CSS, and JavaScript.</li>
+                        <li>Collaborated with design and backend teams to implement new features and improve existing functionalities.</li>
+                        <li>Participated in code reviews and contributed to improving coding standards and best practices.</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Web Development Intern</h3>
+                    <p class="company">Creative Solutions Agency | 2022 - 2023</p>
+                    <ul>
+                        <li>Assisted senior developers in building and optimizing front-end components.</li>
+                        <li>Gained hands-on experience with Git, React, and responsive design techniques.</li>
+                        <li>Contributed to the development of internal tools and client websites.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Let's Create Something Together</h2>
+            <p>I'm always excited about new opportunities and collaborations. If you have a project in mind, a question, or just want to say hello, feel free to reach out!</p>
+            <div class="contact-links">
+                <a href="mailto:mrdemonslayer2@gmail.com" class="btn primary-btn"><i class="fas fa-envelope"></i> Email Me</a>
+                <a href="https://www.linkedin.com/in/youssef-nasr-b4171936b/" target="_blank" class="btn secondary-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/mrking-cyber" target="_blank" class="btn secondary-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <form action="https://formspree.io/f/xldnnboo" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message <i class="fas fa-paper-plane"></i></button>
+                <p class="form-note">This form uses <a href="https://formspree.io/" target="_blank">Formspree</a> for submission. Please ensure you have configured your Formspree endpoint.</p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Youssef. All rights reserved.</p>
+            <p>Crafted with <i class="fas fa-heart"></i> and code, with a little help from my purr-fect assistant.</p>
+        </div>
+    </footer>
+
+    <div id="cat-character"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
