@@ -1,260 +1,179 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youssef | Web Developer Portfolio</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Youssef — Performance-Driven Full-Stack Developer</title>
+  <meta name="description" content="I specialize in building fast, maintainable web applications. Full-Stack with a focus on Web Performance Optimization (WPO)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Youssef</a>
-            <button class="nav-toggle" aria-label="Toggle navigation menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="images/logo.jpg" alt="Aether Logo" class="logo" width="44" height="44">
+        <div class="brand-text">
+          <div class="name">Youssef</div>
+          <div class="subtitle">Performance-Driven Full-Stack Developer</div>
         </div>
-    </header>
+      </div>
 
-    <main>
-        <section class="hero-section">
-            <div class="container hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">Hey there, I'm Youssef.</h1>
-                    <p class="hero-subtitle">Front-End Developer & Cat Enthusiast</p>
-                    <p class="hero-desc">I build responsive, user-friendly websites that blend functionality with creativity. Always coding with clean structure, a playful spirit, and my purr-fect assistant.</p>
-                    <div class="hero-btns">
-                        <a href="#projects" class="btn btn-primary">See My Work <i class="fas fa-arrow-right"></i></a>
-                        <a href="#contact" class="btn btn-secondary">Let's Connect <i class="fas fa-envelope"></i></a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="images/logo.png" alt="Youssef's logo" class="profile-logo">
-                </div>
-                <div id="cat-character"></div>
-            </div>
-        </section>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav">Menu</button>
 
-        <section id="about" class="section">
-            <div class="container">
-                <h2 class="section-title">About Me</h2>
-                <div class="about-content">
-                    <p>I'm a passionate front-end developer who loves turning ideas into interactive, user-friendly web applications. My journey began with simple HTML pages and grew into a fascination with modern frameworks and design systems.</p>
-                    <p>When I'm not coding, I'm reading, enjoying coffee, or playing with my cat.</p>
-                </div>
-            </div>
-        </section>
+      <nav id="primaryNav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <section id="services" class="section">
-            <div class="container">
-                <h2 class="section-title">My Services</h2>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <img src="images/what i fix.png" alt="What I Fix">
-                        <h3>Custom Website Development</h3>
-                        <p>From concept to launch, I'll build a unique, responsive website tailored to your brand's needs.</p>
-                    </div>
-                    <div class="service-card">
-                        <img src="images/quick fixes.png" alt="Quick Fixes">
-                        <h3>Website Maintenance & Updates</h3>
-                        <p>Keep your site running smoothly with routine updates, bug fixes, and performance optimizations.</p>
-                    </div>
-                    <div class="service-card">
-                        <img src="images/from broken to perfect.png" alt="From Broken to Perfect">
-                        <h3>UI/UX Design & Prototyping</h3>
-                        <p>I'll design intuitive and engaging user interfaces to improve user satisfaction and conversions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+  <main class="container">
+    <section class="hero" id="home" aria-label="Hero">
+      <div class="hero-left">
+        <div class="hero-sub">Performance-Driven &amp; Clean Code Focus</div>
+        <h1 class="hero-title">Youssef</h1>
+        <p class="hero-desc">I build fast, user-friendly, and maintainable web applications. My focus is simple: **deliver fast, maintainable sites that convert.**</p>
+        <div class="hero-actions">
+          <a href="#work" class="btn">See My Work</a>
+          <a href="https://www.linkedin.com/in/YOUR_LINKEDIN_ID" class="btn btn-ghost" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
 
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">Skills & Toolkit</h2>
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fab fa-html5"></i>
-                        <h3>HTML5</h3>
-                        <p>Semantic structure, accessibility, latest standards.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-css3-alt"></i>
-                        <h3>CSS3 & SASS</h3>
-                        <p>Responsive layouts, animations, preprocessors.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-js"></i>
-                        <h3>JavaScript (ES6+)</h3>
-                        <p>DOM manipulation, asynchronous operations, modern syntax.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-react"></i>
-                        <h3>React</h3>
-                        <p>Component-based architecture, state management, hooks.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-file-code"></i>
-                        <h3>TypeScript</h3>
-                        <p>Type safety, scalable codebases.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-figma"></i>
-                        <h3>Figma</h3>
-                        <p>UI/UX design, prototyping.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-github"></i>
-                        <h3>Git & GitHub</h3>
-                        <p>Version control, collaborative workflows.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-mobile-alt"></i>
-                        <h3>Responsive Design</h3>
-                        <p>Mobile-first, accessibility, cross-browser compatibility.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fas fa-wind"></i>
-                        <h3>Tailwind CSS</h3>
-                        <p>Utility-first CSS framework.</p>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fab fa-bootstrap"></i>
-                        <h3>Bootstrap</h3>
-                        <p>Rapid prototyping, grid systems.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <div class="hero-right" aria-hidden="true">
+        <img src="images/my-pic.jpg" alt="Youssef — profile photo" class="profile" loading="lazy" width="220" height="220">
+      </div>
+    </section>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Work History & Projects</h2>
-                <div class="timeline-container">
-                    <div class="timeline-item">
-                        <div class="timeline-point"></div>
-                        <div class="timeline-content">
-                            <h3>Front-End Developer</h3>
-                            <p class="company">Freelance (2025 - Present)</p>
-                            <ul>
-                                <li>Successfully designed and developed five complete websites, showcasing expertise in HTML5, CSS3, and JavaScript.</li>
-                                <li>Created a React-based e-commerce product page, demonstrating proficiency in modern component-based architecture and state management.</li>
-                                <li>Utilized version control (Git & GitHub) for all projects to ensure a smooth and organized development workflow.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-point"></div>
-                        <div class="timeline-content">
-                            <h3>Creative Solutions</h3>
-                            <p class="company">Self-Directed Work</p>
-                            <ul>
-                                <li>Developed an interactive, responsive article layout using advanced CSS Grid and fluid typography for an engaging user experience.</li>
-                                <li>Designed and coded a multi-page website template, including dynamic elements and user interface components.</li>
-                                <li>Built a modern landing page concept with a focus on animation and compelling narrative design.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <img src="images/car website.png" alt="Responsive Car Anatomy Website" loading="lazy">
-                        <div class="project-card-content">
-                            <h3>Interactive Car Anatomy</h3>
-                            <p>A detailed, responsive article layout showcasing advanced CSS Grid and fluid typography for an engaging user experience.</p>
-                            <div class="project-links">
-                                <a href="https://mrking-cyber.github.io/Responsive-Car-Anatomy-Website/" target="_blank" class="btn btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/mrking-cyber/Responsive-Car-Anatomy-Website" target="_blank" class="btn btn-link">Code <i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/cleopatra-furniture.png" alt="Cleopatra Website Screenshot" loading="lazy">
-                        <div class="project-card-content">
-                            <h3>Cleopatra's Legacy</h3>
-                            <p>An immersive single-page website exploring the life and times of Cleopatra, featuring an interactive timeline and character profiles.</p>
-                            <div class="project-links">
-                                <a href="https://mrking-cyber.github.io/cleopatra-project/" target="_blank" class="btn btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/mrking-cyber/cleopatra-project" target="_blank" class="btn btn-link">Code <i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/elitestore-ecommerce-demo.png" alt="E-commerce Product Page" loading="lazy">
-                        <div class="project-card-content">
-                            <h3>Modern E-commerce Page</h3>
-                            <p>A sleek product page built with React, featuring dynamic content loading, user reviews, and a responsive design.</p>
-                            <div class="project-links">
-                                <a href="https://mrking-cyber.github.io/elitestore-ecommerce-demo/" target="_blank" class="btn btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/mrking-cyber/elitestore-ecommerce-demo" target="_blank" class="btn btn-link">Code <i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/Global connect consulting.png" alt="Landing Page Concept" loading="lazy">
-                        <div class="project-card-content">
-                            <h3>Creative Landing Page</h3>
-                            <p>A vibrant and animated landing page concept designed to capture attention and guide users through a compelling narrative.</p>
-                            <div class="project-links">
-                                <a href="https://mrking-cyber.github.io/global-connect-consulting-landing-page/" target="_blank" class="btn btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/mrking-cyber/global-connect-consulting-landing-page/tree/main" target="_blank" class="btn btn-link">Code <i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="images/safari.png" alt="Serengeti Lux Adventures Website Screenshot" loading="lazy">
-                        <div class="project-card-content">
-                            <h3>Serengeti Lux Adventures</h3>
-                            <p>A multi-page website template for a luxury safari tour company, featuring dynamic pricing and Stripe payment integration.</p>
-                            <div class="project-links">
-                                <a href="https://mrking-cyber.github.io/serengeti-lux-adventures/" target="_blank" class="btn btn-link">Live Demo <i class="fas fa-external-link-alt"></i></a>
-                                <a href="https://github.com/mrking-cyber/serengeti-lux-adventures" target="_blank" class="btn btn-link">Code <i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section id="services" aria-labelledby="servicesHeading">
+      <h2 id="servicesHeading" class="section-title">My Services</h2>
+      <div class="services-grid">
+        <article class="card">
+          <h3>Custom Full-Stack Development</h3>
+          <p>From concept to launch, I build complete, scalable web applications (Front-End UI/UX to Back-End APIs and database integration).</p>
+        </article>
+
+        <article class="card">
+          <h3>Web Performance Optimization</h3>
+          <p>Comprehensive audit and optimization of existing codebases, implementing techniques like preload and WebP to guarantee **90+ Google PageSpeed scores.**</p>
+        </article>
+
+        <article class="card">
+          <h3>Maintenance &amp; Code Refactoring</h3>
+          <p>Ongoing support, routine updates, and deep refactoring of legacy code to eliminate bottlenecks and technical debt.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" aria-labelledby="skillsHeading">
+      <h2 id="skillsHeading" class="section-title">Skills &amp; Toolkit</h2>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <h4>Performance & Core</h4>
+          <ul class="skill-list">
+            <li>Web Performance Optimization (WPO)</li>
+            <li>HTML5 / CSS3 (Flexbox/Grid)</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Full-Stack</h4>
+          <ul class="skill-list">
+            <li>Node.js / Express</li>
+            <li>PHP</li>
+            <li>MySQL / Database Design</li>
+            <li>RESTful API Integration</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Libraries & Tools</h4>
+          <ul class="skill-list">
+            <li>React.js</li>
+            <li>Git & GitHub</li>
+            <li>Tailwind CSS</li>
+            <li>UI/UX Design (Figma)</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h4>Business Focus</h4>
+          <ul class="skill-list">
+            <li>Problem Solving</li>
+            <li>Clean Code / Maintenance</li>
+            <li>SEO Fundamentals</li>
+            <li>Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" aria-labelledby="workHeading">
+      <h2 id="workHeading" class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
+
+        <article class="project-card">
+          <img src="images/elitestore-ecommerce-demo.jpg" alt="E-commerce Project" loading="lazy" width="356" height="160">
+          <div class="project-meta">
+            <h3>EliteStore E-commerce</h3>
+            <p class="muted">A sleek e-commerce solution built with modular components, demonstrating complex state management and responsive data loading.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="images/Global connect consulting.jpg" alt="Consulting Website" loading="lazy" width="356" height="160">
+          <div class="project-meta">
+            <h3>Global Connect Consulting</h3>
+            <p class="muted">Professional, high-conversion lead generation site focusing on clear CTAs and business strategy.</p>
+          </div>
+        </article>
         
-        <section id="contact" class="section">
-            <div class="container contact-container">
-                <h2 class="section-title">Contact</h2>
-                <div class="contact-info">
-                    <p>I'm always excited about new opportunities and collaborations. If you have a project in mind, a question, or just want to say hello, feel free to reach out!</p>
-                    <div class="contact-links">
-                        <a href="mailto:mrdemonslayer2@gmail.com" class="btn btn-primary"><i class="fas fa-envelope"></i> Email Me</a>
-                        <a href="https://www.linkedin.com/in/youssef-nasr-b4171936b/" target="_blank" class="btn btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                        <a href="https://github.com/mrking-cyber" target="_blank" class="btn btn-secondary"><i class="fab fa-github"></i> GitHub</a>
-                    </div>
-                </div>
-                <form action="https://formspree.io/f/xldnnboo" method="POST" class="contact-form">
-                    <input type="text" name="name" id="name" autocomplete="name" placeholder="Your name" required>
-                    <input type="email" name="_replyto" id="email" autocomplete="email" placeholder="Your Email" required>
-                    <textarea name="message" id="message" rows="6" placeholder="Your Message" autocomplete="off" required></textarea>
-                    <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-paper-plane"></i></button>
-                    <p class="form-note">This form uses <a href="https://formspree.io/" target="_blank">Formspree</a> for submission.</p>
-                </form>
-            </div>
-        </section>
-    </main>
+        <article class="project-card">
+          <img src="images/safari.jpg" alt="Safari Project" loading="lazy" width="356" height="160">
+          <div class="project-meta">
+            <h3>Serengeti Lux Adventures</h3>
+            <p class="muted">Full-scale template featuring secure transaction handling and robust PHP/Node.js back-end connection.</p>
+          </div>
+        </article>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 Youssef. Made with <span class="cat-heart">🐾</span> and code, with a little help from my purr-fect assistant.</p>
-        </div>
-    </footer>
+        <article class="project-card">
+          <img src="images/cleopatra-furniture.jpg" alt="Furniture Website" loading="lazy" width="356" height="160">
+          <div class="project-meta">
+            <h3>Cleopatra Furniture</h3>
+            <p class="muted">Luxury showcase demonstrating advanced CSS layouts and high-fidelity design reproduction.</p>
+          </div>
+        </article>
 
-    <script src="script.js"></script>
+        <article class="project-card">
+          <img src="images/car website.jpg" alt="Car Website" loading="lazy" width="356" height="160">
+          <div class="project-meta">
+            <h3>Car Website (Adaptive Rendering Demo)</h3>
+            <p class="muted">A complex rendering and animation demo showcasing advanced CSS/JS logic. Features **Conditional Loading** to ensure 90+ mobile PageSpeed.</p>
+          </div>
+        </article>
+
+      </div>
+      <div class="hint">Note: Live demos are temporarily disabled while undergoing performance audits to guarantee a 90+ mobile score. View the codebase on GitHub.</div>
+    </section>
+
+    <section id="about" aria-labelledby="aboutHeading">
+      <h2 id="aboutHeading" class="section-title">About Me</h2>
+      <p class="about-text">I am a **Performance-Driven Full-Stack Developer** specializing in turning ideas into fast, user-friendly, and maintainable web applications. My approach combines the core fundamentals of HTML, CSS, and JS with efficient back-end solutions (Node.js/PHP/MySQL).</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>© <strong>Youssef</strong> — Performance-Driven Full-Stack Developer</div>
+      <div class="muted">Designed for clarity, speed, and maintainability.</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
